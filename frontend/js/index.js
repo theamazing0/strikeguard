@@ -28,14 +28,16 @@ document.getElementById("thunder-btn").addEventListener("click", function (e) {
   document.getElementById("retry").classList.remove("visually-hidden");
   const kmDistance = (Date.now() - startTime) / 3000;
   startTime = 0;
-  console.log(kmDistance);
+  document.getElementById("time-elapsed").classList.add("visually-hidden");
+  document.getElementById("distance-km").classList.remove("visually-hidden");
+  document.getElementById("distancekmlabel").innerHTML = kmDistance.toFixed(2);
 });
 
 document.getElementById("repeat-btn").addEventListener("click", function (e) {
   document.getElementById("retry").classList.add("visually-hidden");
   document.getElementById("lightning").classList.remove("visually-hidden");
-  document.getElementById("time-elapsed").classList.add("visually-hidden")
-  document.getElem
+  document.getElementById("time-elapsed").classList.remove("visually-hidden");
+  document.getElementById("distance-km").classList.add("visually-hidden");
   document.getElementById("seconds").innerHTML = "00";
   document.getElementById("milliseconds").innerHTML = "00";
 });
