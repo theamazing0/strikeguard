@@ -34,6 +34,8 @@ document.getElementById("thunder-btn").addEventListener("click", function (e) {
 document.getElementById("repeat-btn").addEventListener("click", function (e) {
   document.getElementById("retry").classList.add("visually-hidden");
   document.getElementById("lightning").classList.remove("visually-hidden");
+  document.getElementById("time-elapsed").classList.add("visually-hidden")
+  document.getElem
   document.getElementById("seconds").innerHTML = "00";
   document.getElementById("milliseconds").innerHTML = "00";
 });
