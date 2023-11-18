@@ -7,13 +7,21 @@
   </head>
   <body>
     <div class="container" style="height: 15%; background: #f4ff00"></div>
-    <div class="container" style="height: 65%; background: #07090f">
-      <img src="/images/lightning-bolt.svg" alt="lightning-bolt"/>
+    <div class="container d-flex justify-content-center align-items-center" style="height: 65%; background: #07090f">
+      <button class="btn btn-dark rounded-circle" id="timer-btn"><img src="../assets/zap.svg" /></button>
+      <h3></h3>
     </div>
-    <div class="container p-2 pt-3 d-flex justify-content-center" style="height: 20%; background: #f4ff00">
+    <div
+      class="container p-2 pt-3 d-flex justify-content-center"
+      style="height: 20%; background: #f4ff00"
+    >
       <div class="">
         <h3>Time Elapsed:</h3>
-        <h1 class="text-center" id="stopwatch-labelnter" style="font-size: 50px">
+        <h1
+          class="text-center"
+          id="stopwatch-labelnter"
+          style="font-size: 50px"
+        >
           <span id="seconds">00</span>:<span id="milliseconds">00</span>
         </h1>
       </div>
