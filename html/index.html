@@ -1,11 +1,27 @@
 <html lang="en">
   <head>
-    <meta charset="utf-8" />
+    <meta charset="utf-8" data-bs-theme="dark" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link href="../css/index.css" rel="stylesheet" />
     <title>Lightning App</title>
   </head>
   <body>
+    <div class="container" style="height: 15%; background: #f4ff00"></div>
+    <div class="container" style="height: 65%; background: #07090f"></div>
+    <div class="container" style="height: 20%; background: #f4ff00">
+      <div class="p-2 pt-3">
+        <h3>Time Elapsed:</h3>
+        <h1 id="stopwatch-label" style="font-size: 50px">
+          <span id="seconds">00</span>:<span id="milliseconds">00</span>
+        </h1>
+      </div>
+    </div>
+    <!-- <div class="container">
+      <button type="button" class="btn btn-primary" id="timer-btn">
+        Start Timer
+      </button>
+    </div> -->
+    <script src="../js/index.js"></script>
     <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>
