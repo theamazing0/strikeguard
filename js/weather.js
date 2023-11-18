@@ -31,6 +31,12 @@ async function getWeather() {
   var weatherForecast = await fetch(cityWeather.properties.forecast);
   weatherForecast = await weatherForecast.json();
   weatherForecast = weatherForecast.properties.periods[0];
-  lightningText.textContent = weatherForecast.detailedForecast;
+  var forecast = weatherForecast.detailedForecast;
+  lightningText.textContent = forecast;
+  if (forecast.includes("thunder")) {
+    thunderDetected.textContent = "There is a thunderstorm in your area. Go indoors.";
+  } else {
+    thunderDetected.textContent = "There is no thunderstorm in your area.";
+  }
 };
 getWeather();
