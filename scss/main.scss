@@ -1,0 +1,36 @@
+// Include any default variable overrides here (though functions won't be available)
+
+// $white: #eaffd7;
+// $gray-100: #e6fbd4;
+// $gray-200: #d3e7c5;
+// $gray-300: #9dac93;
+// $gray-400: #727d6b;
+// $gray-500: #484f44;
+// $gray-600: #393e36;
+// $gray-700: #292e28;
+// $gray-800: #242823;
+// $gray-900: #1f221e;
+// $black: #1b1e1a;
+
+// $blue: #8299cb;
+// $indigo: #977df2;
+// $purple: #bf7ec0;
+// $pink: #d6a2b1;
+// $red: #d46369;
+// $orange: #d99e7e;
+// $yellow: #d6bc8b;
+// $green: #98c493;
+// $teal: #8ec4aa;
+// $cyan: #9ec0cd;
+
+// $primary: #bbdea0;
+
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+// Then add additional custom code here
+
+@import "../node_modules/@fontsource-variable/source-code-pro/index.css";
+
+body {
+  font-family: "Source Code Pro Variable", sans-serif;
+}

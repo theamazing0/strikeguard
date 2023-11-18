@@ -4,13 +4,13 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "sass": "sass --watch scss/index.scss:css/index.css scss/officers.scss:css/officers.css"
+    "sass": "sass --watch scss/index.scss:css/index.css"
   },
   "author": "",
   "license": "MIT",
   "dependencies": {
     "@fontsource-variable/source-code-pro": "^5.0.16",
-    "boostrap": "^2.0.0",
+    "bootstrap": "^5.3.2",
     "expressjs": "^1.0.1"
   },
   "devDependencies": {
