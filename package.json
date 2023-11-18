@@ -4,11 +4,16 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "sass": "sass --watch scss/index.scss:css/index.css scss/officers.scss:css/officers.css"
   },
   "author": "",
   "license": "MIT",
   "dependencies": {
+    "@fontsource-variable/source-code-pro": "^5.0.16",
+    "boostrap": "^2.0.0",
     "expressjs": "^1.0.1"
+  },
+  "devDependencies": {
+    "sass": "^1.69.5"
   }
 }
