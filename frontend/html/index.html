@@ -6,13 +6,10 @@
     <title>Lightning App</title>
   </head>
   <body>
-    <div class="container d-flex align-items-center justify-content-center" style="height: 15%; background: #f4ff00">
-      <h1 style="font-weight: 800 !important">Strike Guard</h1>
-      <a class="pl-2 text-dark" style="padding-left: 10px" href="/lightning">Forecast</a>
-    </div>
+    <div class="container" style="height: 15%; background: #f2ff00"></div>
     <div
       class="container d-flex justify-content-center align-items-center"
-      style="height: 65%; background: #07090f"
+      style="height: 65%; background: #0f0f0f"
     >
       <div
         id="lightning"
@@ -41,13 +38,20 @@
         <button class="btn btn-dark rounded-circle" id="repeat-btn">
           <img style="padding: 20px" src="../assets/repeat.svg" />
         </button>
-        <h3 class="p-5 text-white">Do it again</h3>
+        <p class="px-5 pt-5 pb-1 text-white">
+          <span style="font-weight: 700">Danger: </span
+          ><span id="danger"></span>
+        </p>
+        <p class="px-5 text-white">
+          <span style="font-weight: 700">Action: </span
+          ><span id="action"></span>
+        </p>
       </div>
     </div>
     <div
       id="time-elapsed"
       class="container p-2 pt-3 d-flex justify-content-center"
-      style="height: 20%; background: #f4ff00"
+      style="height: 20%; background: #f2ff00"
     >
       <div>
         <h3>Time Elapsed:</h3>
@@ -64,7 +68,7 @@
     <div
       id="distance-km"
       class="container p-2 pt-3 d-flex justify-content-center"
-      style="height: 20%; background: #f4ff00"
+      style="height: 20%; background: #f2ff00"
     >
       <div>
         <h3>Distance From Lightning:</h3>
@@ -77,6 +81,6 @@
       </div>
     </div>
     <script src="../js/index.js"></script>
-    <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>

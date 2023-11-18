@@ -31,6 +31,27 @@ document.getElementById("thunder-btn").addEventListener("click", function (e) {
   document.getElementById("time-elapsed").classList.add("visually-hidden");
   document.getElementById("distance-km").classList.remove("visually-hidden");
   document.getElementById("distancekmlabel").innerHTML = kmDistance.toFixed(2);
+  if (kmDistance < 2) {
+    document.getElementById("danger").innerHTML =
+      "High risk of direct strikes, ground current, and side flashes.";
+    document.getElementById("action").innerHTML =
+      "Seek immediate shelter in a sturdy building or a metal-topped vehicle.";
+  } else if (kmDistance < 5) {
+    document.getElementById("danger").innerHTML =
+      "Decreased but still significant risk of indirect strikes and electrical surges.";
+    document.getElementById("action").innerHTML =
+      "Move indoors and avoid using corded electronics and plumbing.";
+  } else if (kmDistance < 8) {
+    document.getElementById("danger").innerHTML =
+      "Lower immediate risk, but still a potential for sudden changes in storm intensity.";
+    document.getElementById("action").innerHTML =
+      "Stay alert and ready to seek shelter, and monitor the storm's progress.";
+  } else {
+    document.getElementById("danger").innerHTML =
+      "Minimal direct risk, but important to be aware of storm movement.";
+    document.getElementById("action").innerHTML =
+      "Continue outdoor activities with caution, but have a plan to find shelter quickly if needed.";
+  }
 });
 
 document.getElementById("repeat-btn").addEventListener("click", function (e) {
