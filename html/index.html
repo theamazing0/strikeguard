@@ -6,28 +6,61 @@
     <title>Lightning App</title>
   </head>
   <body>
-    <div class="container d-flex align-items-center justify-content-center" style="height: 15%; background: #f4ff00">
-      <h1 style="font-weight: 800 !important">Strike Guard</h1>
-    </div>
-    <div class="container d-flex justify-content-center align-items-center" style="height: 65%; background: #07090f">
-      <button class="btn btn-dark rounded-circle" id="timer-btn"><img src="../assets/zap.svg" /></button>
-      <h3></h3>
+    <div class="container" style="height: 15%; background: #f4ff00"></div>
+    <div
+      class="container d-flex justify-content-center align-items-center"
+      style="height: 65%; background: #07090f"
+    >
+      <div
+        id="lightning"
+        class="d-flex flex-column justify-content-center align-items-center"
+      >
+        <button class="btn btn-dark rounded-circle" id="lightning-btn">
+          <img src="../assets/zap.svg" />
+        </button>
+        <h3 class="p-5 text-white">I see lightning!</h3>
+      </div>
+
+      <div
+        id="thunder"
+        class="d-flex flex-column justify-content-center align-items-center visually-hidden"
+      >
+        <button class="btn btn-dark rounded-circle" id="thunder-btn">
+          <img src="../assets/volume-2.svg" />
+        </button>
+        <h3 class="p-5 text-white">I hear thunder!</h3>
+      </div>
+
+      <div
+        id="retry"
+        class="d-flex flex-column justify-content-center align-items-center visually-hidden"
+      >
+        <button class="btn btn-dark rounded-circle" id="repeat-btn">
+          <img style="padding: 20px;" src="../assets/repeat.svg" />
+        </button>
+        <h3 class="p-5 text-white">Do it again</h3>
+      </div>
     </div>
     <div
       class="container p-2 pt-3 d-flex justify-content-center"
       style="height: 20%; background: #f4ff00"
     >
-      <div class="">
+      <div>
         <h3>Time Elapsed:</h3>
         <h1
           class="text-center"
           id="stopwatch-labelnter"
-          style="font-size: 50px"
+          style="font-size: 50px; font-weight: 600 !important"
         >
           <span id="seconds">00</span>:<span id="milliseconds">00</span>
         </h1>
       </div>
     </div>
+    <!-- <div class="container">
+      <button type="button" class="btn btn-primary" id="timer-btn">
+        Start Timer
+      </button>
+    </div> -->
     <script src="../js/index.js"></script>
     <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
   </body>
